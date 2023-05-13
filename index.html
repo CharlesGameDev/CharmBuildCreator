@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Charm Build Creator</title>
+    <meta content="Charm Build Creator" property="og:title">
+    <meta content="Create and share charm builds easily" property="og:description">
+    <meta content="https://charlesgamedev.github.io/CharmBuildCreator" property="og:url">
+    <meta content="https://charlesgamedev.github.io/CharmBuildCreator/img/logo.png" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+    <script src="js/index.js"></script>
+
+    <br>
+    <br>
+    <br>
+    <div class="screen">
+        <div class="leftside">
+            <span class="equipped_text center">Equipped</span>
+            <div class="charms" id="charms">
+                <!-- <img src="img/charms/shaman.png" id="shaman"> -->
+            </div>
+            
+            <span class="notches_text center">Notches</span>
+            <br>
+            <div class="notches" id="notches">
+                <!-- <img src="img/notch3.png"> -->
+            </div>
+            <hr>
+            <div class="charmlist" id="charmlist">
+                <div class="list1">
+                    <img src="img/charms/compass.png" id="compass">
+                    <img src="img/charms/swarm.png" id="swarm">
+                    <img src="img/charms/stalwart.png" id="stalwart">
+                    <img src="img/charms/soulcatcher.png" id="soulcatcher">
+                    <img src="img/charms/shaman.png" id="shaman">
+                    <img src="img/charms/souleater.png" id="souleater">
+                    <img src="img/charms/dashmaster.png" id="dashmaster">
+                    <img src="img/charms/sprintmaster.png" id="sprintmaster">
+                    <img src="img/charms/grubsong.png" id="grubsong">
+                    <img src="img/charms/elegy.png" id="elegy">
+                </div>
+                <div class="list2">
+                    <img src="img/charms/heart.png" id="heart">
+                    <img src="img/charms/greed.png" id="greed">
+                    <img src="img/charms/strength.png" id="strength">
+                    <img src="img/charms/twister.png" id="twister">
+                    <img src="img/charms/steadybody.png" id="steadybody">
+                    <img src="img/charms/heavyblow.png" id="heavyblow">
+                    <img src="img/charms/quickslash.png" id="quickslash">
+                    <img src="img/charms/longnail.png" id="longnail">
+                    <img src="img/charms/markofpride.png" id="markofpride">
+                    <img src="img/charms/fury.png" id="fury">
+                </div>
+                <div class="list1">
+                    <img src="img/charms/thorns.png" id="thorns">
+                    <img src="img/charms/baldurshell.png" id="baldurshell">
+                    <img src="img/charms/flukenest.png" id="flukenest">
+                    <img src="img/charms/dcrest.png" id="dcrest">
+                    <img src="img/charms/glowingwomb.png" id="glowingwomb">
+                    <img src="img/charms/quickfocus.png" id="quickfocus">
+                    <img src="img/charms/deepfocus.png" id="deepfocus">
+                    <img src="img/charms/lifebloodheart.png" id="lifebloodheart">
+                    <img src="img/charms/lifebloodcore.png" id="lifebloodcore">
+                    <img src="img/charms/joni.png" id="joni">
+                </div>
+                <div class="list2">
+                    <img src="img/charms/hiveblood.png" id="hiveblood">
+                    <img src="img/charms/spore.png" id="spore">
+                    <img src="img/charms/sharpshadow.png" id="sharpshadow">
+                    <img src="img/charms/unn.png" id="unn">
+                    <img src="img/charms/nmg.png" id="nmg">
+                    <img src="img/charms/weaversong.png" id="weaversong">
+                    <img src="img/charms/dreamwielder.png" id="dreamwielder">
+                    <img src="img/charms/dreamshield.png" id="dreamshield">
+                    <img src="img/charms/grimmchild.png" id="grimmchild">
+                    <img src="img/charms/carefreemelody.png" id="carefreemelody">
+                </div>
+            </div>
+        </div>
+        <div class="rightside" id="rightside">
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="name_text center" id="NAME_TEXT">Wayward Compass</span>
+            <br>
+            <br>
+            <span class="cost_text center">Cost</span>
+            <br>
+            <div class="cost_notches center" id="COST_NOTCHES">
+                <!-- <img class="cost_notch" src="img/notch2.png"> -->
+            </div>
+            <br>
+            <br>
+            <img class="center" id="CHARM_IMAGE" src="img/charms/compass.png">
+            <br>
+            <br>
+            <span class="desc_text center" id="DESCRIPTION_TEXT">Whispers its location to the bearer whenever a map is open, allowing wanderers to pinpoint their current location.</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="bottomsettings center">
+        Notches: <input type="number" id="notchesinput" name="notchesinput" min="1" max="11" value="11">
+        Name: <input type="text" id="nameinput" name="nameinput" value="Charm Build 1">
+
+        <br>
+        Sound: <input type="checkbox" id="soundinput" name="soundinput">
+        <br>
+        <button onclick="create_link()">Copy Link</button>
+        <br>
+        <button onclick="randomize()">Randomize</button>
+        <div id="copiedlink" style="visibility: hidden">Link copied to clipboard</div>
+    </div>
+</body>
+</html>

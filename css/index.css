@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Perpetua";
+    src: url(../font/main.ttf);
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: "Perpetua";
+    overflow: hidden;
+}
+
+hr {
+    height: 5px;
+    margin: 50px 0;
+    margin-left: 5%;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, white), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+    border: 0;
+}
+
+.logo {
+    width: 450px;
+}
+
+.center {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.notches {
+    margin-left: 13%;
+}
+
+.notches img {
+    scale: 0.8;
+    margin-right: 0px;
+}
+
+.charms {
+    width: 200%;
+    height: 15%;
+    max-height: 15%;
+    margin-left: -27%;
+    scale: 0.6 0.58;
+}
+
+.charms img {
+    margin-right: 25px;
+    transform: scale(1);
+    transition: transform 50ms ease-in-out;
+}
+
+.charms img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 50px rgb(76, 132, 235));
+}
+
+.charms .notch {
+    scale: 1.2;
+    margin-left: 25px;
+    margin-bottom: 45px;
+}
+
+.charmlist {
+    width: 140%;
+    margin-left: 10%;
+    margin-bottom: 50%;
+}
+
+.charmlist .list2 {
+    margin-left: 50px;
+}
+
+.charmlist img {
+    margin-right: -40px;
+    margin-bottom: -70px;
+    transform: scale(0.6);
+    transition: transform 50ms ease-in-out;
+}
+
+.charmlist img.selected {
+    opacity: 0.5;
+    filter: drop-shadow(0 0 50px white);
+}
+
+.charmlist img:hover {
+    cursor: pointer;
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 50px rgb(76, 132, 235));
+}
+
+.equipped_text {
+    margin-right: 55%;
+    font-size: xx-large;
+}
+
+.notches_text {
+    margin-right: 60%;
+    font-size: x-large;
+}
+
+.screen {
+    display: flex;
+}
+
+.leftside {
+    margin-right: 10%;
+    max-height: 40rem;
+}
+
+.rightside {
+    flex: 1;
+    max-height: 40rem;
+}
+
+.name_text {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cost_text {
+    text-align: center;
+    font-size: 40px;
+}
+
+.desc_text {
+    text-align: left;
+    font-size: 30px;
+}
+
+.cost_notch {
+    margin-left: 4px;
+}
+
+.bottomsettings {
+    font-size: xx-large;
+    margin-bottom: 500px;
+    margin-right: 500px;
+}
+
+.bottomsettings input {
+    scale: 1.2;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.bottomsettings button {
+    scale: 1.2;
+}
