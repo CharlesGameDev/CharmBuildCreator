@@ -513,7 +513,7 @@ function create_link()
     let data = `${NAME_INPUT.value}|${NOTCHES}|${EQUIPPED_CHARMS}`;
     data = btoa(data);
 
-    const link = `${window.location.origin}/?data=${data}`
+    const link = `${window.location.origin}/CharmBuildCreator/?data=${data}`
     navigator.clipboard.writeText(link);
 }
 
