@@ -154,3 +154,10 @@ hr {
 .bottomsettings button {
     scale: 1.2;
 }
+
+.credit {
+    font-style: italic;
+    font-size: medium;
+    text-align: right;
+    color: gray;
+}
