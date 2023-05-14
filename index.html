@@ -15,7 +15,7 @@
 <body>
     <script src="js/index.js"></script>
 
-    <span class="credit center">Website by Charles Game Dev, all assets and Hollow Knight belong to Team Cherry<br>1.0.3</span>
+    <span class="credit center">Website by Charles Game Dev, all assets and Hollow Knight belong to Team Cherry<br>1.0.4</span>
     <br>
     <br>
     <br>
@@ -25,9 +25,9 @@
             <div class="charms" id="charms">
                 <!-- <img src="img/charms/shaman.png" id="shaman"> -->
             </div>
-            
-            <span class="notches_text center">Notches</span>
             <br>
+            <br>
+            <span class="notches_text center">Notches</span>
             <div class="notches" id="notches">
                 <!-- <img src="img/notch3.png"> -->
             </div>
@@ -84,8 +84,10 @@
             </div>
         </div>
         <div class="rightside" id="rightside">
+            <input class="center" style="height: 2.5%;" type="text" id="nameinput" name="nameinput" value="Charm Build 1">
             <br>
-            <br>
+            <span style="font-size: large;" class="center">Notches</span>
+            <input type="number" id="notchesinput" name="notchesinput" min="1" max="11" value="11" class="center" style="width: 5%;">
             <br>
             <br>
             <span class="name_text center" id="NAME_TEXT">Wayward Compass</span>
@@ -102,6 +104,8 @@
             <br>
             <br>
             <span class="desc_text center" id="DESCRIPTION_TEXT">Whispers its location to the bearer whenever a map is open, allowing wanderers to pinpoint their current location.</span>
+            <br>
+            <span class="effects_text center" id="EFFECTS_TEXT"></span>
         </div>
     </div>
     <br>
@@ -109,17 +113,16 @@
     <br>
     <br>
     <br>
+    <br>
     <div class="bottomsettings center">
-        Notches: <input type="number" id="notchesinput" name="notchesinput" min="1" max="11" value="11">
-        Name: <input type="text" id="nameinput" name="nameinput" value="Charm Build 1">
-
-        <br>
         Sound: <input type="checkbox" id="soundinput" name="soundinput">
         <br>
-        <button onclick="create_link()">Copy Link</button>
-        <br>
-        <button onclick="randomize()">Randomize</button>
-        <div id="copiedlink" style="visibility: hidden">Link copied to clipboard</div>
+        <div style="margin-right: 40px;">
+            <button onclick="create_link()">Copy Link</button>
+            <br>
+            <button onclick="randomize()">Randomize</button>
+            <div id="copiedlink" style="visibility: hidden">Link copied to clipboard</div>
+        </div>
     </div>
 </body>
 </html>
